@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: #730FE6;
+    padding: 20px 50px;
+}
+header h1{
+    font-family: 'Lobster Two', cursive;
+    color: white;
+    font-weight: 200;
+    font-size: 40px;
+}
+.container{
+    margin: 10%;
+    text-align: center;
+}
+p{
+    font-family: 'Lobster Two', cursive;
+    font-weight: 150;
+    font-size: 25px;
+}
+
+body{
+    background-color: #FFF7EB;
+}
+input{
+    background-color: #F4ECFE;
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 15px;
+    width: 900px;
+    display: block;
+    text-align: center;
+    margin: 15px auto;
+    font-size: 18px;
+}
+button{
+    background-color: #730FE6;
+    width: 250px;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 3px;
+}
