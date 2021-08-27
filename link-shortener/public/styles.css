@@ -44,3 +44,7 @@ button{
     color: white;
     border-radius: 3px;
 }
+
+#copy{
+    width: auto;
+}
