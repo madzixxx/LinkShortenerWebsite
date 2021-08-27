@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-require('dotenv').config()
+require('dotenv').config();
 
 var validUrl = require('valid-url');
 
@@ -17,12 +17,14 @@ function Shortener(){
         const inputLink=event.target.value;
         setLink(inputLink);
 
+        
+
         if (validUrl.isUri(link)){
             fetch("https://api-ssl.bitly.com/v4/shorten", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${process.env.KEY}`
+                    'Authorization': `Bearer ${process.env.REACT_APP_KEY}`
                 },
                 body: JSON.stringify({long_url: link})
             }).then(response => response.json())
@@ -30,7 +32,7 @@ function Shortener(){
             setLink(link);
         } else {
             setLink(link);
-            setNewLink("Imput is not an URL");
+            setNewLink("Input is not an URL");
         }
     }
 
