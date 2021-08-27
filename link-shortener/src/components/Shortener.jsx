@@ -5,8 +5,6 @@ var validUrl = require('valid-url');
 
 function Shortener(){
 
-    //const key = 'b5ab099671e040039de3c073fdab0ef3e57a3332';
-
     const [link, setLink]=useState("");
     const [newLink, setNewLink]=useState("");
 
