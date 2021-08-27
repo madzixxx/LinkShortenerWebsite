@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+require('dotenv').config()
+
 var validUrl = require('valid-url');
 
 function Shortener(){
@@ -22,7 +24,7 @@ function Shortener(){
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer b5ab099671e040039de3c073fdab0ef3e57a3332`
+                    'Authorization': `Bearer ${process.env.KEY}`
                 },
                 body: JSON.stringify({long_url: link})
             }).then(response => response.json())
